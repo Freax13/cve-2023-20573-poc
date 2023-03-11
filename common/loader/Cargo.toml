@@ -1,0 +1,14 @@
+[package]
+name = "loader"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bit_field = "0.10.1"
+bytemuck = { version = "1.13.0", features = ["min_const_generics"] }
+constants = { workspace = true }
+goblin = "0.6.0"
+snp-types = { workspace = true }
+thiserror = { version = "1.0.37" }
+raw-cpuid = "10.6.0"
+x86_64 = { git = "https://github.com/rust-osdev/x86_64", rev = "bae6119533f19cd5c3557d5a302524f1d72456c5" }
